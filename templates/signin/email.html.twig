@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enter Email{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h2>Saisissez votre adresse mail</h2>
+        <form method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse mail</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Suivant</button>
+        </form>
+    </div>
+{% endblock %}
